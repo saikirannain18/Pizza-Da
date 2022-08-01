@@ -1,0 +1,142 @@
+{% extends 'customer/base.html' %}
+
+{% block content %}
+
+
+    <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+      <style>
+        .explore-menu-section {
+  background-color: white;
+  padding: 10px;
+  margin-top: 50px;
+}
+.menu-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+.menu-item-image {
+  border-radius: 16px;
+}
+.menu-card-title {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 24px;
+}
+.menu-item-link {
+  color: #d0b200;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+}
+.menu-item-card {
+  border-radius: 16px;
+}
+      </style>
+    </head>
+    <div class="explore-menu-section pt-5 pb-5">
+    
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="menu-section-heading">Menu</h1><br>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="shadow menu-item-card p-3 mb-3">
+                <img
+                  src="https://img.freepik.com/free-photo/mixed-pizza-with-various-ingridients_140725-3790.jpg?w=996&t=st=1659350232~exp=1659350832~hmac=e868317739a040ac28850c019df76e9005b88c0a78889d9b59e0480e3806e735"
+                  class="menu-item-image w-100" alt="starters"
+                />
+                <h1 class="menu-card-title">Veg Starters</h1>
+                <a href="{% url 'order' %}" class="menu-item-link">
+                  View All
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="shadow menu-item-card p-3 mb-3">
+                <img
+                  src="https://img.freepik.com/premium-photo/classic-pizza-dark-wooden-table-surface-scattering-flour-pizza-restaurant-menu-concept_152625-1030.jpg?size=626&ext=jpg&ga=GA1.2.1885323487.1659344134"
+                  class="menu-item-image w-100" alt="veg"
+                />
+                <h1 class="menu-card-title">Non-Veg Starters</h1>
+                <a href="{% url 'order' %}" class="menu-item-link">
+                  View All
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            
+
+
+            
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <img
+                  src="https://img.freepik.com/free-photo/tomato-soup-with-green-table_140725-2447.jpg?size=626&ext=jpg&ga=GA1.2.1885323487.1659344134"
+                  class="menu-item-image w-100" alt="soups"
+                />
+                <h1 class="menu-card-title">Soups</h1>
+                <a href="{% url 'order' %}" class="menu-item-link">
+                  View All
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+
+            
+
+            
+
+            
+
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <img
+                  src="https://img.freepik.com/free-photo/cocktail-glasses_144627-34955.jpg?size=626&ext=jpg&ga=GA1.2.1885323487.1659344134"
+                  class="menu-item-image w-100" alt="soft"
+                />
+                <h1 class="menu-card-title">Soft-Drinks</h1>
+                <a href="{% url 'order' %}" class="menu-item-link">
+                  View All
+                  <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    {% endblock content %}

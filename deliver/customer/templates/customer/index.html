@@ -1,0 +1,92 @@
+{% extends 'customer/base.html' %}
+
+{% block content %}
+<head>
+    <style>
+        .para-index{
+            text-align: center;
+            text-shadow: 1px 0px;
+            color: rgb(75, 80, 83);
+        }
+        .index-para{
+            text-align: center;
+            text-shadow: 0.5px 0px;
+            color:rgb(64, 92, 9);
+            font-weight: 400;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: underline;
+            font-style: oblique;
+        }
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+    .pizza{
+      color:white;
+      font-weight: bold;
+    }
+    </style>
+    </head>
+<div  style="background-image:url(https://img.freepik.com/premium-photo/delicious-cheese-pizza-traditional-italian-pizza-top-view_187166-38947.jpg?w=1380); width:100%;height:850px; color:black;  font-size:18px; background-repeat:no-repeat; background-size:cover;">
+    
+<marquee behavior="alternate">Place Your Favorite Food...</marquee>
+<div style="text-align: center;">
+    <a href="https://www.freeiconspng.com/img/2947" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/pizza-png-4.png" width="80" alt="Food Transparent PNG" /></a>
+    <h1 class="pizza"><strong>Pizza-Home</strong></h1>
+</div>
+
+<hr><br>
+
+<br>
+
+<p style="text-align: center;">
+    
+  </p>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample1">
+        <div class="card card-body">
+            
+            <img src="https://res.cloudinary.com/dxqvnb6kz/image/upload/v1658909277/cards_gogq18.png"/>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body">
+            <img src="https://images01.nicepage.com/page/42/43/website-design-preview-42438.webp" height="190px"/>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div style="text-align: center;">
+    <a href="{% url 'order' %}" class="btn btn-danger"><strong>Order Now!</strong></a>
+    </div>
+    
+    <hr>
+
+    
+      
+       
+    
+</div>
+
+{% endblock content %}

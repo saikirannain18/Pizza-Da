@@ -1,0 +1,92 @@
+{% extends 'customer/base.html' %}
+
+{% block content %}
+<head>
+    <style>
+        .header-tag{
+  color:rgba(0, 0, 0, 0.597);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.about {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-image: url("https://www.freepik.com/free-vector/fast-food-menu-set-icons-background-french-fries-hamburger-sweet-potato-fries_3330411.htm#query=pizza%20background&position=4&from_view=search");
+  }
+  .aboutBottom {
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .aboutBottom p {
+    width: 1200px;
+    color: rgb(53, 32, 5);
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .about .aboutBottom h1 {
+    font-weight: 400;
+    font-size: 70px;
+    color: rgb(237, 103, 103);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-40px);
+    
+  }
+
+  
+  
+  .footer-section-text {
+    color: #040810;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 23px;
+    
+  }
+  .about-image{
+    border-radius: 50px;
+    background-size: cover;
+
+  }
+
+    </style>
+</head>
+
+
+<div class="about">
+
+<div class="container  mb-5">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8 col-sm-12 offset-md-1 p-4 text-center">
+            <h1 class="header-tag">ABOUT US</h1>
+            <h1 class="footer-section-text">Pizza-Home</h1>
+        </div>
+        <img class="about-image" src="https://img.freepik.com/free-psd/top-view-fast-food-black-background-mock-up_23-2148321326.jpg?w=1060&t=st=1659348900~exp=1659349500~hmac=5b92023f3a813969ee1b7b1197c5f418e1169fff64aac2146fd3de3c1a63c6d3" alt="about-image"/>
+    </div>
+    <div class="row justify-content-center mt-1">
+        <div class="col-md-10 col-sm-12 offset-md-1 p-4 aboutBottom text-center">
+        <p> Pizza is sold fresh or frozen, and whole or in portion-size slices. Methods have been developed to overcome challenges such as preventing the sauce from combining with the dough, and producing a crust that can be frozen and reheated without becoming rigid. There are frozen pizzas with raw ingredients and self-rising crusts.
+
+          Another form of pizza is available from take and bake pizzerias. This pizza is assembled in the store, then sold unbaked to customers to bake in their own ovens. Some grocery stores sell fresh dough along with sauce and basic ingredients, to assemble at home before baking in an oven.
+          
+          
+    </p>
+    <p class="footer-section-address">
+        Our pizza secret.
+</p>
+    </div>
+    </div>
+</div>
+
+</div>
+{% endblock content %}
